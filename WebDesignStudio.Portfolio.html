@@ -1,0 +1,308 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Title</title>
+</head>
+<body>
+<style>
+
+    html,
+    body {
+        margin: 0;
+    }
+
+    h5{
+        margin:0;
+    }
+
+    .sign {
+        float: right;
+        border: 1px solid #333;
+        padding: 7px;
+        margin: 10px 0 5px 5px;
+        background: #f0f0f0;
+    }
+
+    .sign figcaption {
+        margin: 0 auto 5px; /* Отступы вокруг абзаца */
+    }
+
+    .main-container .home h1{
+        font-size:50px;
+        color: #b5b4b5;
+        text-shadow: 1.9px 1.9px #000000;
+    }
+
+    .main-container .home h2{
+        font-size:20px;
+        color:#000000;
+        text-shadow:0px 0px white;
+        text-align:center;
+    }
+
+    .header .container .nav-bar a {
+        text-decoration: none;
+        list-style-type:none;
+        color: #b5b4b5;
+    }
+
+    .main-container .home a{
+        text-decoration: none;
+        list-style-type: none;
+        color:black;
+    }
+
+    .header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        border:1px solid black;
+        box-shadow:1px 1px grey;
+    }
+
+    .header .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 70px;
+        padding-right: 70px;
+        background-color: #b5b4b5;
+    }
+
+    .header .nav-bar ul li:hover{
+        color: white;
+    }
+
+    .header .nav-bar ul li{
+        display: inline;
+        list-style-type: none;
+        color: #b5b4b5;
+        text-shadow: 1px 1px #000000;
+        padding:5px;
+    }
+
+    .header .container .nav-bar,
+    .header .container .name {
+        display:flex;
+        justify-content:center;
+        align-items: center;
+        color: #b5b4b5;
+        text-shadow: 0.5px 0.5px #000000;
+    }
+
+    .header .container .name {
+        border: 1px solid grey;
+        box-shadow:1px 1px grey;
+        padding:10px;
+    }
+
+    .main-container .home {
+        display:flex;
+        background: url('./asserts/img/home.jpeg') repeat-y;
+        justify-content: center;
+        padding-top: 250px;
+        background-size: 100% 100%;
+        height:560px;
+        width:auto;
+    }
+
+    .main-container .home img{
+        position: absolute;
+        width: 100%;
+        height:100%;
+        background-size:cover;
+        z-index:-1;
+    }
+
+    .main-container .home h1,
+    .main-container .home h2{
+        margin:0;
+    }
+
+    .main-container .home ul {
+        display:flex;
+        justify-content: center;
+    }
+
+    .main-container .home ul li{
+        background-color: #b5b4b5;
+        box-shadow:1px 1px #000000;
+        padding:10px 30px;
+        border: 1px solid #000000;
+        margin:10px;
+        border-radius:5px;
+        font-weight:600;
+        text-shadow: 0px 0px #000000;
+        list-style-type:none;
+        text-decoration: none;
+    }
+
+    .main-container .home ul li:hover {
+        background-color: white;
+    }
+
+    .second-container .home {
+        background: url(http://abali.ru/_d/2013/05/siniy_goluboj_fon_1280x720.jpg)repeat-y;
+        height:600px;
+        background-size: 100% 100%;
+    }
+
+    .second-container .home h1{
+        font-size:30px;
+        color: #b5b4b5;
+        text-align:left;
+        padding-top:0px;
+    }
+
+    .second-container .home .outer {
+        width: 500px;
+        height: 400px;
+        line-height: 200px;
+        text-align: center;
+        font-size: 0;
+        padding-top:50px;
+        padding-left:100px;
+    }
+
+    .second-container .home .inner {
+        line-height: 20px;
+        vertical-align: middle;
+        font-size: medium;
+    }
+
+    .second-container .home .dline {
+        line-height: 2.0;
+    }
+
+    .second-container .home p {
+        line-height: 0.5em;
+        margin:0;
+        text-align: left;
+        font-size:18px;
+    }
+
+    .second-container .home img{
+        border-radius:175px;
+        margin-left:750px;
+        margin-top:-350px;
+        width:350px;
+        height:350px;
+    }
+
+    .third-container .home {
+        background: url(https://wallpaperscraft.ru/image/temnyy_pyatna_fon_tekstura_50611_1920x1080.jpg)repeat-y;
+        height:800px;
+        width:auto;
+        background-size: 100% 100%;
+    }
+
+    .third-container .home h1{
+        font-size:40px;
+        color:#b5b4b5;
+        text-shadow:1.5px 1.5px #000000;
+        padding:12px;
+    }
+
+    .third-container .home h2{
+        font-size:22px;
+        color: #000000;
+        text-shadow:0px 0px #000000;
+    }
+
+    .third-container .home h1,
+    .third-container .home h2{
+        margin:0;
+        text-align:center;
+    }
+
+    .third-container .home ul li{
+        background-color: #b5b4b5;
+        box-shadow:1px 1px #000000;
+        border: 1px solid #000000;
+        border-radius:5px;
+        font-weight:600;
+        text-shadow: 0px 0px #000000;
+        list-style-type:none;
+        text-decoration: none;
+    }
+
+    .third-container .home ul{
+        display:flex;
+        flex:1;
+        justify-content: center;
+    }
+
+    /*TODO: emmet*/
+</style>
+<div class="header">
+    <div class="container">
+        <div class="name">
+            <span>Serge Makarov</span>
+        </div>
+        <div class="nav-bar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Portfolio">Portfolio</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="main-container">
+    <h5><a id="home"></a></h5>
+    <div class="home">
+        <div>
+            <h1>Infinito Web Design Studio</h1>
+            <h2>Where Awesomeness Is Brought To Life</h2>
+            <hr>
+            <ul>
+                <a href="#"><li>Twitter</li></a>
+                <a href="#"><li>Github</li></a>
+                <a href="#"><li>Linkedin</li></a>
+                <a href="#"><li>freeCodeCamp</li></a>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="second-container">
+    <div class="home">
+        <h5><a id="about"></a></h5>
+        <div class="outer">
+          <div class="inner">
+              <h1>Infinito Web Design Studio</h1>
+              <p class="dline">I'm self taught web designer, developer, co-founder and entrepreneur based in Ukraine.</p>
+              <p class="dline">I'm currently part of a small web development team in a upcoming start-up, building web and mobile applications.
+                  My passion is to use technology based solutions, to help solve real world challenges.</p>
+              <p class="dline">Competences:</p>
+              <p class="dline">Languages and Frameworks:</p>
+              <p class="dline">Javascript, HTML5, CSS3, jQuery, Bootstrap3</p>
+              <p class="dline">Tools & expertise:</p>
+              <p class="dline">Git, Responsive Web Design.</p>
+          </div>
+      </div>
+        <img src="data:image/png;base64,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">
+    </div>
+</div>
+<div class="third-container">
+    <div class="home">
+      <div>
+          <h5><a id="Portfolio"></a></h5>
+          <h1>Awesomeness Portfolio.</h1>
+          <h2>Below you'll find some of my recent work.</h2>
+      </div>
+          <div class="bootstrap">
+              <figure class="sign">
+              <ul>
+                  <li>Twich.tv API project</li>
+                  <li>Wikipedia Search Engine</li>
+                  <li>Stainless Steel Calculator</li>
+              </ul>
+
+          </div>
+    </div>
+</div>
+</body>
+</html>

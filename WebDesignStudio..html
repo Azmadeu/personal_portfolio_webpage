@@ -1,0 +1,447 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Infinito Web Design Studio</title>
+</head>
+<body>
+<style>
+
+    html,
+    body {
+        margin: 0;
+    }
+
+    h5{
+        margin:0;
+    }
+
+    .main-container .home h1{
+        font-size:50px;
+        color: #b5b4b5;
+        text-shadow: 1.9px 1.9px #000000;
+    }
+
+    .main-container .home h2{
+        font-size:20px;
+        color:#000000;
+        text-shadow:0px 0px white;
+        text-align:center;
+    }
+
+    .header .container .nav-bar a {
+        text-decoration:none;
+        list-style-type:none;
+        color: white;
+        font-weight: 600;
+        border:1px solid #1D2122;
+        padding:12px 5px;
+        border-radius:4px;
+        text-shadow:1px 1px #000000;
+    }
+
+    .header .container .nav-bar a:hover{
+        background-color: #FFC244;
+        border:1px solid black;
+        text-shadow:0px 0px white;
+        color:black;
+    }
+
+    .header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        border:1px solid #000000;
+    }
+
+    .header .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 70px;
+        padding-right: 70px;
+        background-color: #1D2122;
+
+    }
+
+    .header .nav-bar ul li {
+        display: inline;
+        list-style-type: none;
+        padding: 0px;
+    }
+
+    .header .container .nav-bar,
+    .header .container .name {
+        display:flex;
+        justify-content:center;
+        align-items: center;
+        color: white;
+        font-weight:600;
+        text-shadow:1px 1px black;
+    }
+
+    .header .container .name {
+        border: 1px solid black;
+        box-shadow:0px 0px 1px 1px black;
+        padding:10px;
+    }
+
+    .main-container .home {
+        display:flex;
+        background: url('./asserts/img/home.jpeg') repeat-y;
+        justify-content: center;
+        padding-top: 250px;
+        background-size: 100% 100%;
+        height:560px;
+        width:auto;
+    }
+
+    .main-container .home a{
+        text-decoration: none;
+        list-style-type: none;
+        color:black;
+    }
+
+    .main-container .home img{
+        position: absolute;
+        width: 100%;
+        height:100%;
+        background-size:cover;
+        z-index:-1;
+    }
+
+    .main-container .home h1,
+    .main-container .home h2{
+        margin:0;
+    }
+
+    .main-container .home ul {
+        display:flex;
+        justify-content: center;
+    }
+
+    .main-container .home ul li{
+        background-color: #b5b4b5;
+        box-shadow:1px 1px #000000;
+        padding:10px 30px;
+        border: 1px solid #000000;
+        margin:10px;
+        border-radius:5px;
+        font-weight:600;
+        text-shadow: 0px 0px #000000;
+        list-style-type:none;
+        text-decoration: none;
+    }
+
+    .main-container .home ul li:hover {
+        background-color: white;
+    }
+
+    .second-container .home {
+        background: url(http://comfort-crimea.ru/sites/default/files/banner_images/sky_.jpg)repeat-y;
+        height:600px;
+        background-size: 100% 100%;
+    }
+
+    .second-container .home h1{
+        font-size:30px;
+        color: #b5b4b5;
+        text-align:left;
+        text-shadow:1px 1px #000000;
+        padding-top:0px;
+    }
+
+    .second-container .home .outer {
+        width: 500px;
+        height: 400px;
+        line-height: 200px;
+        text-align: center;
+        font-size: 0;
+        padding-top:50px;
+        padding-left:100px;
+    }
+
+    .second-container .home .inner {
+        line-height: 20px;
+        vertical-align: middle;
+        font-size: medium;
+    }
+
+    .second-container .home .dline {
+        line-height: 2.0;
+    }
+
+    .second-container .home p {
+        line-height: 0.5em;
+        margin:0;
+        text-align:left;
+        font-size:18px;
+        font-weight: 600;
+    }
+
+    .second-container .home img{
+        border-radius:175px;
+        margin-left:750px;
+        margin-top:-350px;
+        width:350px;
+        height:350px;
+    }
+
+    .third-container .home {
+        background: url(https://wallpaperscraft.ru/image/temnyy_pyatna_fon_tekstura_50611_1920x1080.jpg)repeat-y;
+        height:666px;
+        width:auto;
+        background-size: 100% 100%;
+    }
+
+    .third-container .home h1{
+        font-size:40px;
+        color:#b5b4b5;
+        text-shadow:1.5px 1.5px #000000;
+        padding:12px;
+    }
+
+    .third-container .home h2{
+        font-size:22px;
+        color: #000000;
+        text-shadow:0px 0px #000000;
+    }
+
+    .third-container .home h1,
+    .third-container .home h2{
+        margin:0;
+        text-align:center;
+    }
+
+    .third-container .home ul li{
+        border: 0px solid #b5b4b5;
+        border-radius:5px;
+        font-weight:600;
+        text-shadow: 1px 1px #000000;
+        color:white;
+    }
+
+    .third-container .home a{
+        text-decoration: none;
+        list-style-type: none;
+    }
+
+    .third-container .home ul{
+        display:flex;
+        flex:1;
+        justify-content: center;
+    }
+
+    .third-container .home img{
+        border:1px solid #000000;
+        box-shadow:1px 1px #000000;
+    }
+
+    .third-container .home .sign {
+        float: right;
+        border: 1px solid #000000;
+        box-shadow:0px 0px 1px 1px #555555;
+        border-radius:10px;
+        padding: 7px;
+        margin: -7px 1px;
+        background:#111111;
+    }
+
+    .third-container .home .sign figcaption {
+        margin: 0 auto 5px;
+        text-align:center;
+    }
+
+    .third-container .home figure:hover{
+        background-color: #555555;
+    }
+
+    .fourth-container .home {
+        background:url(http://99px.ru/sstorage/53/2017/03/tmb_192669_1176.jpg) repeat-y;
+        background-size: 100% 100%;
+        height:800px;
+        width:auto;
+    }
+
+    .fourth-container .home ul{
+        display:flex;
+        margin:30px;
+        justify-content: right;
+    }
+
+    .fourth-container .home ul li{
+        background-color: #b5b4b5;
+        box-shadow:1px 1px #000000;
+        border: 1px solid #000000;
+        border-radius:5px;
+        font-weight:600;
+        text-shadow: 0px 0px #000000;
+        text-align:right;
+        padding:7px 25px;
+        margin-right:100px;
+        color:#000000;
+    }
+
+    .fourth-container .home a{
+        text-decoration: none;
+        list-style-type:none;
+    }
+
+    .fourth-container .home h1{
+        margin-top:0;
+        color:#b5b4b5;
+        padding-top:100px;
+    }
+
+    .fourth-container .home h2{
+        color:#b5b4b5;
+        margin-top:-20px;
+    }
+
+    .fourth-container .home h1,
+    .fourth-container .home h2{
+        padding-left:30px;
+        text-shadow:1px 1px #555555;
+    }
+
+    .fourth-container .home ul li:hover{
+        background-color: white;
+    }
+
+    .footer {
+        position: relative;
+        left: 0; bottom: 0;
+        padding: 40px;
+        background: #1D2122;
+        width: 100%;
+    }
+
+    .footer ul li{
+        color: dodgerblue;
+        display:inline;
+        font-size:25px;
+    }
+
+    .footer a{
+        text-decoration: none;
+        list-style-type: none;
+    }
+
+    .footer p{
+        color:white;
+        padding-left:39px;
+    }
+    .footer img{
+        padding-right:70px;
+        margin-top:0;
+        width:80px;
+        height:80px;
+    }
+
+    .footer ul li:hover{
+        color: white;
+    }
+
+    /*TODO: emmet*/
+</style>
+<div class="header">
+    <div class="container">
+        <div class="name">
+            <span>Serge Makarov</span>
+        </div>
+        <div class="nav-bar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="main-container">
+    <h5><a id="home"></a></h5>
+    <div class="home">
+        <div>
+            <h1>Infinito Web Design Studio</h1>
+            <h2>Where Awesomeness Is Brought To Life</h2>
+            <hr>
+            <ul>
+                <a href="http://"><li>Twitter</li></a>
+                <a href="http://"><li>Github</li></a>
+                <a href="http://"><li>Linkedin</li></a>
+                <a href="http://"><li>freeCodeCamp</li></a>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="second-container">
+    <div class="home">
+        <h5><a id="about"></a></h5>
+        <div class="outer">
+            <div class="inner">
+                <h1>Infinito Web Design Studio</h1>
+                <p class="dline">I'm self taught web designer, developer, co-founder and entrepreneur based in Ukraine.</p>
+                <p class="dline">I'm currently part of a small web development team in a upcoming start-up, building web and mobile applications.
+                    My passion is to use technology based solutions, to help solve real world challenges.</p>
+                <p class="dline">Competences:</p>
+                <p class="dline">Languages and Frameworks:</p>
+                <p class="dline">Javascript, HTML5, CSS3, jQuery, Bootstrap3</p>
+                <p class="dline">Tools & expertise:</p>
+                <p class="dline">Git, Responsive Web Design.</p>
+            </div>
+        </div>
+       <img src="data:image/jpeg;base64,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">
+    </div>
+</div>
+<div class="third-container">
+    <div class="home">
+            <h5><a id="portfolio"></a></h5>
+            <h1>Awesomeness Portfolio.</h1>
+            <h2>Below you'll find some of my recent work.</h2>
+                <ul>
+                    <a href="http://twich.tv"><figure class="sign"><p><img src="http://rs.img.com.ua/crop?v2=1&w=600&h=0&url=http%3A%2F%2Fsport.img.com.ua%2Fb%2Forig%2F1%2Fb2%2F43b2f79664d7c1325c88c637f8748b21.jpg" width="300" height="200"></p>
+                       <figcaption><li>Twich.tv API project</li></figcaption></figure></a>
+                    <a href="http://wikipedia.org"><figure class="sign"><p><img src="http://www.integratedhealthcareyork.com/wp-content/uploads/2017/01/Wiki-image.jpg"width="300"height="200"></p>
+                        <figcaption><li>Wikipedia Search Engine</li></figcaption></figure></a>
+                    <a href="http://"><figure class="sign"><p><img src="https://is5-ssl.mzstatic.com/image/thumb/Purple118/v4/02/ab/58/02ab5856-a5da-6d09-87ef-242e05482853/pr_source.jpg/643x0w.jpg"width="300"height="200"></p>
+                    <figcaption><li>Stainless Steel Calculator</li></figcaption></figure></a>
+                </ul>
+        <ul>
+            <a href="http://"><figure class="sign"><p><img src="https://assets.pcmag.com/media/images/403667-free-code-camp-top.png?width=1343&height=626" width="300" height="200"></p>
+                <figcaption><li>freeCodeCamp News Feed</li></figcaption></figure></a>
+            <a href="http://"><figure class="sign"><p><img src="https://static1.squarespace.com/static/57192378c2ea517c03d5baa9/t/588aa977e3df28b0aec45921/1485482391294/weather-app-v1.jpg"width="300"height="200"></p>
+                <figcaption><li>Weather App</li></figcaption></figure></a>
+            <a href="http://"><figure class="sign"><p><img src="./asserts/img/home.jpeg" width="300" height="200"></p>
+                <figcaption><li>Portfolio Zipline</li></figcaption></figure></a>
+        </ul>
+    </div>
+</div>
+<div class="fourth-container">
+    <h5 id="contact"></h5>
+    <div class="home">
+        <h1>Connect with Infinito Web Design Studio:</h1>
+        <h2>projectunicef2013@gmail.com</h2>
+        <ul><a href="http://"><li>Twitter</li></a></ul>
+        <ul><a href="http://"><li>Github</li></a></ul>
+        <ul><a href="http://"><li>Linkedin</li></a></ul>
+        <ul><a href="http://"><li>freeCodeCamp</li></a></ul>
+    </div>
+</div>
+<div class="footer">
+    <ul>
+        <a href="#home"><li>Home</li></a>
+        <li>&#12539;</li>
+        <a href="#about"><li>About</li></a>
+        <li>&#12539;</li>
+        <a href="#portfolio"><li>Portfolio</li></a>
+        <li>&#12539;</li>
+        <a href="#contact"><li>Contact</li></a>
+        <li><img src="https://pbs.twimg.com/profile_images/692531829287567360/ytP7U362.png" align="right"></li>
+    </ul>
+    <p>Copyright © Infinito Web Design Studio 2018. All rights reserved</p>
+    </div>
+</div>
+</body>
+</html>
