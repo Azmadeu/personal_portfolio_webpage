@@ -4,24 +4,26 @@
     <meta charset="UTF-8">
     <title>Random Quote Machine</title>
     <head>
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
         <script>
             window.onload = function() {
-                var classColor = document.getElementsByClassName('color');
-                var button = document.getElementById('change color');
-                var body = document.getElementsByTagName('body')[0];
+                var button = $('#change-color')[0];
+                var items = $('.color');
                 var colors = ['#16a085', '#27ae60', '#2c3e50', '#f39c12', '#e74c3c', '#9b59b6', '#FB6964', '#342224', "#472E32", "#BDBB99", "#77B1A9", "#73A857"];
-                button.onclick = function() {
-                    var color = colors[Math.floor(Math.random() * colors.length)];
+                var body = $('body')[0];
+                button.onclick = function () {
+                    var color = colors[Math.floor(Math.random() * colors.length - 1)];
                     body.style.backgroundColor = color;
-                    for(var i = 0; i < classColor.length; i++) {
-                        if (classColor[i].tagName === "H1") {
-                            classColor[i].style.color = color;
+                    for (var i = 0; i < items.length; i++) {
+                        if (items[i].tagName === 'H1') {
+                            items[i].style.color = color;
                         } else {
-                            classColor[i].style.backgroundColor = color;
+                            items[i].style.backgroundColor = color;
                         }
                     }
-                };
-            };
+                }
+            }
+               //https://talaikis.com/api/quotes/random/
         </script>
     </head>
 <body style="background-color: lightblue">
@@ -46,6 +48,7 @@
         cursor:pointer;
         background-color: deepskyblue;
     }
+
     .border:hover {
          opacity:0.9;
     }
@@ -86,7 +89,7 @@
         <ul>
             <li><button class="border left color"><img src="http://mattersofgrey.com/wp-content/uploads/2010/11/white_twitter.png" width="22" height="22"></button></li>
             <li><button class="border left color"><img src="http://www.pvhc.net/img163/ucduefsnwclxgntvwrwc.gif" width="22" height="22"></button></li>
-            <li><button class="border right color" id="change color">New Quote</button></li>
+            <li><button class="border right color" id="change-color">New Quote</button></li>
         </ul>
     </div>
 </div>
