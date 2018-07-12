@@ -131,7 +131,7 @@ h5{
 }
 
 .about-container .home {
-    background: url(http://www.usualhouse.com/wp-content/uploads/2013/11/17527.jpg)repeat-y;
+    background: url("./asserts/img/office.jpg")repeat-y;
     height:600px;
     background-size: 100% 100%;
 }
@@ -184,7 +184,7 @@ h5{
 }
 
 .portfolio-container .home {
-    background: url(http://wallpaperscraft.ru/image/temnyy_pyatna_fon_tekstura_50611_1920x1080.jpg)repeat-y;
+    background: url("./asserts/img/background.jpg")repeat-y;
     height:666px;
     width:auto;
     background-size: 100% 100%;
@@ -258,7 +258,7 @@ h5{
 }
 
 .contact-container .home {
-    background:url(http://99px.ru/sstorage/53/2017/03/tmb_192669_1176.jpg) repeat-y;
+    background:url("./asserts/img/contact-page.jpg") repeat-y;
     background-size: 100% 100%;
     height:800px;
     width:auto;
