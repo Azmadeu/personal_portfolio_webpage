@@ -81,7 +81,7 @@ h5{
 
 .main-container .home {
     display:flex;
-    background: url('./docs/asserts/img/home.jpeg') repeat-y;
+    background: url('./docs/asserts/img/title-page.jpg') repeat-y;
     justify-content: center;
     padding-top: 250px;
     background-size: 100% 100%;
