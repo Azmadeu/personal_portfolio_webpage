@@ -81,11 +81,9 @@ h5 {
 
 .main-container .home {
   display: flex;
-  background: url('./asserts/img/title-page.jpg') repeat-y;
+  background: url('./asserts/img/title-page.jpg') no-repeat center;
   justify-content: center;
-  padding-top: 250px;
-  background-size: 100% 100%;
-  width: 1286px;
+  padding-top: 200px;
   height: 560px;
 }
 
@@ -238,7 +236,6 @@ h5 {
   border: 1px solid #000000;
   box-shadow: 0px 0px 1px 1px #555555;
   border-radius: 10px;
-  padding: 7px;
   margin: -7px 1px;
   background: #111111;
 }
